@@ -4,14 +4,15 @@ import type { Severity } from '../types/severity';
 import { Snackbar } from '../components/feedback';
 import { Theme } from '../styles/theme';
 
-type SnackbarRequest = {
-  readonly text: string;
-  readonly severity: Severity;
-};
+type SnackbarRequest = Readonly<{
+  text: string;
+  severity: Severity;
+}>;
 
-type SnackbarRequestWithKey = {
-  readonly key: number;
-} & SnackbarRequest;
+type SnackbarRequestWithKey = Readonly<{
+  key: number;
+}> &
+  SnackbarRequest;
 
 const snackbarDuration = 5000; // ms
 const errorSnackbarDuration = 10000; // ms

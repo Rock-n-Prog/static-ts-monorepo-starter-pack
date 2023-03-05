@@ -4,11 +4,12 @@ import { ErrorMessage, Label } from '../typography';
 import { Flex } from '../layouts';
 import type { Theme } from '../../styles/theme';
 
-type TextInputProps = {
-  readonly label: string;
-  readonly error?: string;
-  readonly required?: boolean;
-} & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'id'>;
+type TextInputProps = Readonly<{
+  label: string;
+  error?: string;
+  required?: boolean;
+}> &
+  Omit<React.InputHTMLAttributes<HTMLInputElement>, 'id'>;
 
 const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   ({ label, error, required = false, ...props }, ref) => {
@@ -24,10 +25,10 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   },
 );
 
-type StyledInputProps = {
-  readonly $isValid: boolean;
-  readonly theme: Theme;
-};
+type StyledInputProps = Readonly<{
+  $isValid: boolean;
+  theme: Theme;
+}>;
 
 const StyledInput = styled.input(
   ({ theme, $isValid }: StyledInputProps) => css`

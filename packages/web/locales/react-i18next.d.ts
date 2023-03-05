@@ -10,12 +10,12 @@ declare module 'react-i18next' {
   /* eslint-disable-next-line prefer-type-alias/prefer-type-alias,no-unused-vars */
   interface CustomTypeOptions {
     readonly defaultNs: 'common';
-    readonly resources: {
-      readonly common: typeof common;
-      readonly forms: typeof forms & typeof common;
-      readonly index: typeof index & typeof common;
-      readonly hello: typeof hello & typeof common;
-      readonly users: typeof users & typeof common;
-    };
+    readonly resources: Readonly<{
+      common: typeof common;
+      forms: typeof forms & typeof common;
+      index: typeof index & typeof common;
+      hello: typeof hello & typeof common;
+      users: typeof users & typeof common;
+    }>;
   }
 }

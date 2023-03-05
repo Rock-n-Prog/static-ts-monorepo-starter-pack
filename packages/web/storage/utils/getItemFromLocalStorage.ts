@@ -1,7 +1,7 @@
-type GetItemFromLocaleStorageParams<T> = {
-  readonly key: string;
-  readonly initialValue: T;
-};
+type GetItemFromLocaleStorageParams<T> = Readonly<{
+  key: string;
+  initialValue: T;
+}>;
 
 function getItemFromLocaleStorage<T>({ key, initialValue }: GetItemFromLocaleStorageParams<T>) {
   const item = window?.localStorage.getItem(key);

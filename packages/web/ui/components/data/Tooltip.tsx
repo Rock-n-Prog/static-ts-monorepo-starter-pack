@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 import { Typography } from '../typography';
 import { Theme } from '../../styles/theme';
 
-type TooltipProps = {
-  readonly title: string;
-};
+type TooltipProps = Readonly<{
+  title: string;
+}>;
 
 function Tooltip({ children, title }: React.PropsWithChildren<TooltipProps>) {
   return (
@@ -17,7 +17,7 @@ function Tooltip({ children, title }: React.PropsWithChildren<TooltipProps>) {
 }
 
 const TooltipText = styled.span(
-  ({ theme }: { readonly theme: Theme }) => css`
+  ({ theme }: Readonly<{ theme: Theme }>) => css`
     ${Typography};
     visibility: hidden;
     min-width: 7.5rem;

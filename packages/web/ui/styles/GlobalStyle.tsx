@@ -2,7 +2,7 @@ import { createGlobalStyle, css } from 'styled-components';
 import { Theme } from './theme';
 
 const GlobalStyle = createGlobalStyle(
-  ({ theme }: { readonly theme: Theme }) => css`
+  ({ theme }: Readonly<{ theme: Theme }>) => css`
     html,
     body {
       margin: 0;

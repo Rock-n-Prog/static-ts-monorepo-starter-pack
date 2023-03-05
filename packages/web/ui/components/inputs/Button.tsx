@@ -5,10 +5,11 @@ import { Theme } from '../../styles/theme';
 
 type ButtonVariant = 'contained' | 'outlined' | 'text';
 
-type ButtonProps = {
-  readonly tooltipText?: string;
-  readonly variant?: ButtonVariant;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonProps = Readonly<{
+  tooltipText?: string;
+  variant?: ButtonVariant;
+}> &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, tooltipText, disabled = false, type = 'button', variant = 'outlined', ...props }, ref) => {
@@ -25,7 +26,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 const ButtonTypography = css(
-  ({ theme }: { readonly theme: Theme }) => css`
+  ({ theme }: Readonly<{ theme: Theme }>) => css`
     font-family: sans-serif;
     font-weight: ${theme.fonts.weights.regular};
     font-size: ${theme.fonts.sizes.s};
@@ -34,10 +35,10 @@ const ButtonTypography = css(
   `,
 );
 
-type VariantToStylesParams = {
-  readonly theme: Theme;
-  readonly disabled: boolean;
-};
+type VariantToStylesParams = Readonly<{
+  theme: Theme;
+  disabled: boolean;
+}>;
 
 const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => string> = {
   text: ({ theme, disabled }) =>
@@ -93,11 +94,11 @@ const variantToStyles: Record<ButtonVariant, (params: VariantToStylesParams) => 
   `,
 };
 
-type StyledButtonProps = {
-  readonly $variant: ButtonVariant;
-  readonly theme: Theme;
-  readonly disabled: boolean;
-};
+type StyledButtonProps = Readonly<{
+  $variant: ButtonVariant;
+  theme: Theme;
+  disabled: boolean;
+}>;
 
 const StyledButton = styled.button<StyledButtonProps>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
