@@ -1,6 +1,9 @@
-enum ErrorMessage {
-  NoEmpty = 'noEmpty',
-  EmailFormat = 'emailFormat',
-}
+const ErrorMessages = {
+  NoEmpty: 'noEmpty',
+  EmailFormat: 'emailFormat',
+} as const;
 
-export { ErrorMessage };
+type ErrorMessage = typeof ErrorMessages[keyof typeof ErrorMessages];
+
+export type { ErrorMessage };
+export { ErrorMessages };

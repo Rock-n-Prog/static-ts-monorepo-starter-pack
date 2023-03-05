@@ -5,15 +5,9 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "@acme/web#build": {
+    "@acme/api#build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**"],
-      "env": ["NODE_ENV", "VERCEL_URL", "RENDER_INTERNAL_HOSTNAME", "PORT"]
-    },
-    "@acme/mobile#build": {
-      "dependsOn": ["^build"],
-      "outputs": ["node_modules/.cache/metro/**"],
-      "env": ["NODE_ENV", "VERCEL_URL", "PORT"]
+      "outputs": [".next/**"]
     },
     "generate": {
       "outputs": []

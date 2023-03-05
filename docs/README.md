@@ -1,7 +1,7 @@
 # Docs
 
 Docs are hosted on
-[https://rock-n-prog.github.io/web-ts-monorepo-starter-pack](https://rock-n-prog.github.io/web-ts-monorepo-starter-pack),
+[https://rock-n-prog.github.io/static-ts-monorepo-starter-pack](https://rock-n-prog.github.io/static-ts-monorepo-starter-pack),
 if you prefer that.
 
 Here is our documentation!

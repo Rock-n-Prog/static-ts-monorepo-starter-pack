@@ -15,7 +15,7 @@ ls:
   .md: kebab-case | SCREAMING_SNAKE_CASE
   .json: kebab-case
 
-  apps/web/pages:
+  apps/api/pages:
     # Regex for _app.tsx
     # Regex for path props (ex: [name].tsx)
     .tsx: kebab-case | regex:_app | regex:\[[a-z]+\]
@@ -33,11 +33,8 @@ ignore:
   - .husky
   - .idea
   - node_modules
-  - apps/web/.next
-  - apps/web/node_modules
-  - apps/mobile/.expo
-  - apps/mobile/node_modules
-  - apps/mobile-ui-showcase/node_modules
+  - apps/api/.next
+  - apps/api/node_modules
   - docs/_config.yml
   - packages/api/dist
   - packages/api/node_modules
@@ -45,13 +42,9 @@ ignore:
   - packages/config/stylelint/node_modules
   - packages/db/node_modules
   - packages/db/prisma/migrations
-  - packages/mobile/forms/node_modules
-  - packages/mobile/locales/node_modules
-  - packages/mobile/storage/node_modules
-  - packages/mobile/ui/node_modules
   - packages/theme/node_modules
   - packages/web/forms/node_modules
   - packages/web/locales/node_modules
   - packages/web/storage/node_modules
-  - packages/web-ui/node_modules
-  - packages/web-ui/storybook-static
+  - packages/web/ui/node_modules
+  - packages/web/ui/storybook-static
