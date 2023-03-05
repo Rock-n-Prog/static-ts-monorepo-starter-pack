@@ -7,7 +7,7 @@ declare global {
 
 const prisma = global.prisma || new PrismaClient();
 
-/* eslint-disable-next-line functional/no-conditional-statement */
+/* eslint-disable-next-line functional/no-conditional-statements */
 if (process.env.NODE_ENV !== 'production') {
   /* eslint-disable-next-line functional/immutable-data */
   global.prisma = prisma;
