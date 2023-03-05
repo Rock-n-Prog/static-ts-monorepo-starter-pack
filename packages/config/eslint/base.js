@@ -30,6 +30,9 @@ module.exports = {
       'error',
       {
         enforcement: 'ReadonlyShallow',
+        parameters: {
+          enforcement: 'None',
+        },
         variables: {
           enforcement: 'None',
         },
