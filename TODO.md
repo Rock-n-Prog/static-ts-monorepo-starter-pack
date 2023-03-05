@@ -3,10 +3,12 @@
 No need for a project board in a boilerplate.
 
 ## Features
+
 - Add Astro web app (named web)
 - Change "users" mock data for "news" (more proper for static sites)
 
 ## Cleanup
+
 - Review usage / need for "web" packages
 - Review usage of deps / packages related to Astro usage
   - SCSS instead of Styled-components, probably can change stylelint config and other stuff
