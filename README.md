@@ -48,8 +48,10 @@ pnpm install
 
 ### Prepare pre-commit hook
 
+Only if you want those:
+
 ```bash
-pnpm prepare
+pnpm husky:setup
 ```
 
 ### Setup database
