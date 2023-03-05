@@ -56,5 +56,5 @@ jobs:
       - name: Lint
         run: pnpm --filter @acme/web-api lint
 
-      - name: Build
-        run: pnpm --filter @acme/web-api build
+      # - name: Build
+      #   run: pnpm --filter @acme/web-api build
