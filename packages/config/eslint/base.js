@@ -26,7 +26,15 @@ module.exports = {
     'functional/no-return-void': 'off',
     'functional/no-expression-statements': 'off',
     'functional/functional-parameters': 'off',
-    'functional/prefer-immutable-types': ['error', { 'enforcement': 'ReadonlyShallow' }],
+    'functional/prefer-immutable-types': [
+      'error',
+      {
+        enforcement: 'ReadonlyShallow',
+        variables: {
+          enforcement: 'None',
+        },
+      },
+    ],
     'functional/no-mixed-type': 'off',
     'turbo/no-undeclared-env-vars': 'off',
   },
