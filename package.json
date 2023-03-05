@@ -6,8 +6,7 @@
     "apps/*",
     "packages/*",
     "packages/config/*",
-    "packages/web/*",
-    "packages/mobile/*"
+    "packages/web/*"
   ],
   "engines": {
     "node": ">=14.0.0"
@@ -18,9 +17,7 @@
     "db:generate": "turbo run generate --filter @acme/db",
     "db:migrate:dev": "turbo run migrate:dev --filter @acme/db",
     "db:seed": "turbo run seed --filter @acme/db",
-    "dev": "turbo run dev --parallel --filter @acme/web --filter @acme/mobile",
-    "dev:mobile": "turbo run dev --filter @acme/mobile",
-    "dev:web": "turbo run dev --filter @acme/web",
+    "dev": "turbo run dev --filter @acme/web-api",
     "env:local": "turbo run env:local",
     "format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
     "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,yml}\"",
@@ -31,8 +28,7 @@
     "lint:root:fix": "eslint --max-warnings 0 ./*.{js,jsx,ts,tsx}",
     "lint:staged": "lint-staged",
     "prepare": "husky install",
-    "storybook:mobile": "turbo run dev --filter @acme/mobile-ui-showcase --no-deps",
-    "storybook:web": "turbo run storybook --filter @acme/web-ui --no-deps",
+    "storybook": "turbo run storybook --filter @acme/web-ui --no-deps",
     "yeet": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\; && find . -name '.turbo' -type d -prune -print -exec rm -rf '{}' \\; && find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;"
   },
   "devDependencies": {
@@ -54,14 +50,8 @@
     "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
     ],
-    "apps/web/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix apps/web/**/*.{js,jsx,ts,tsx}"
-    ],
-    "apps/mobile/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix apps/mobile/**/*.{js,jsx,ts,tsx}"
-    ],
-    "apps/mobile-storybook/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix apps/mobile-storybook/**/*.{js,jsx,ts,tsx}"
+    "apps/api/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix apps/api/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/db/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/db/**/*.{js,ts}"
@@ -72,8 +62,8 @@
     "packages/theme/**/*.{js,ts}": [
       "eslint --max-warnings 0 --fix packages/theme/**/*.{js,ts}"
     ],
-    "packages/web-ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/web-ui/**/*.{js,jsx,ts,tsx}"
+    "packages/web/ui/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix packages/web/ui/**/*.{js,jsx,ts,tsx}"
     ],
     "packages/web/forms/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/web/forms/**/*.{js,jsx,ts,tsx}"
@@ -86,21 +76,6 @@
     ],
     "packages/web/storage/**/*.{js,jsx,ts,tsx}": [
       "eslint --max-warnings 0 --fix packages/web/storage/**/*.{js,jsx,ts,tsx}"
-    ],
-    "packages/mobile/ui/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile/ui/**/*.{js,jsx,ts,tsx}"
-    ],
-    "packages/mobile/forms/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile/forms/**/*.{js,jsx,ts,tsx}"
-    ],
-    "packages/mobile/locales/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile/locales/**/*.{js,jsx,ts,tsx}"
-    ],
-    "packages/mobile/locales/translations/**/*.{json}": [
-      "eslint --max-warnings 0 --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js packages/mobile/locales/translations/"
-    ],
-    "packages/mobile/storage/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings 0 --fix packages/mobile/storage/**/*.{js,jsx,ts,tsx}"
     ]
   }
 }

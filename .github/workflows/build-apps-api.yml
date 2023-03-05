@@ -1,4 +1,4 @@
-name: Build Web UI Package
+name: Build Web API
 
 on:
   workflow_dispatch:
@@ -7,20 +7,22 @@ on:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-web-ui.yml'
-      - 'packages/web/ui/**'
+      - '.github/workflows/build-apps-api.yml'
+      - 'apps/api/**'
+      - 'packages/db/**'
+      - 'packages/trpc/**'
       - 'packages/config/eslint/**'
-      - 'packages/config/stylelint/**'
       - 'packages/config/tsconfig/**'
   pull_request:
     branches:
       - main
       - develop
     paths:
-      - '.github/workflows/build-packages-web-ui.yml'
-      - 'packages/web/ui/**'
+      - '.github/workflows/build-apps-api.yml'
+      - 'apps/api/**'
+      - 'packages/db/**'
+      - 'packages/trpc/**'
       - 'packages/config/eslint/**'
-      - 'packages/config/stylelint/**'
       - 'packages/config/tsconfig/**'
 
 jobs:
@@ -42,11 +44,17 @@ jobs:
         with:
           version: 7.9.5
 
+      - name: Install database dependencies
+        run: pnpm --filter @acme/db install
+
+      - name: Generate prisma client
+        run: pnpm --filter @acme/db generate
+
       - name: Install dependencies
-        run: pnpm --filter @acme/web-ui install
+        run: pnpm --filter @acme/web-api install
 
       - name: Lint
-        run: pnpm --filter @acme/web-ui lint
+        run: pnpm --filter @acme/web-api lint
 
-      - name: Storybook smoke test
-        run: pnpm --filter @acme/web-ui storybook:smoke-test
+      - name: Build
+        run: pnpm --filter @acme/web-api build

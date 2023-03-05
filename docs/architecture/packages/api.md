@@ -2,7 +2,7 @@
 
 Library is located at [`packages/api`](../../../packages/api).
 
-This library is used by a web app. For more info, read [its docs](../apps/web.md).
+This library is used by a web app. For more info, read [its docs](../apps/api.md).
 
 ## Software architecture
 
