@@ -13,7 +13,7 @@ const defaultUsers = [
 ] as readonly Partial<User>[];
 
 (async () => {
-  /* eslint-disable-next-line functional/no-try-statement */
+  /* eslint-disable-next-line functional/no-try-statements */
   try {
     await Promise.all(
       defaultUsers.map(user =>

@@ -33,6 +33,9 @@ module.exports = {
         parameters: {
           enforcement: 'None',
         },
+        returnTypes: {
+          enforcement: 'None',
+        },
         variables: {
           enforcement: 'None',
         },
