@@ -4,10 +4,10 @@ import { Typography } from '../typography';
 import type { Theme } from '../../styles/theme';
 import type { Severity } from '../../types/severity';
 
-type AlertProps = {
-  readonly text: string;
-  readonly severity: Severity;
-};
+type AlertProps = Readonly<{
+  text: string;
+  severity: Severity;
+}>;
 
 function Alert({ text, severity }: AlertProps) {
   return (
@@ -17,10 +17,10 @@ function Alert({ text, severity }: AlertProps) {
   );
 }
 
-type AlertContainerProps = {
-  readonly $severity: Severity;
-  readonly theme: Theme;
-};
+type AlertContainerProps = Readonly<{
+  $severity: Severity;
+  theme: Theme;
+}>;
 
 const AlertContainer = styled.div<AlertContainerProps>(
   ({ theme, $severity }: AlertContainerProps) => css`

@@ -10,9 +10,8 @@
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
     "@acme/tsconfig": "workspace:*",
-    "typescript": "^4.5.2"
+    "eslint": "^8.35.0",
+    "typescript": "^4.9.5"
   }
 }

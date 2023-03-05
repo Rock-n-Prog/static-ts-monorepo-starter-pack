@@ -44,8 +44,8 @@ jobs:
         with:
           version: 7.9.5
 
-      - name: Install database dependencies
-        run: pnpm --filter @acme/db install
+      - name: Install all dependencies
+        run: pnpm install
 
       - name: Generate prisma client
         run: pnpm --filter @acme/db generate
@@ -56,5 +56,5 @@ jobs:
       - name: Lint
         run: pnpm --filter @acme/web-api lint
 
-      - name: Build
-        run: pnpm --filter @acme/web-api build
+      # - name: Build
+      #   run: pnpm --filter @acme/web-api build

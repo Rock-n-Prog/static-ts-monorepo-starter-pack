@@ -12,7 +12,7 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 | Name        | Type    | Status                                                                                                                                                                                                                                                                     |
 | ----------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | General     | General | [![General](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml)                                                         |
-| Web         | App     | [![Build Web App](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml)                                     |
+| Web API     | App     | [![Build Web API](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-api.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-api.yml)                                     |
 | Database    | Package | [![Build Database Package](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-db.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-db.yml)                      |
 | API         | Package | [![Build API Package](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-api.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-api.yml)                         |
 | Theme       | Package | [![Build Theme Package](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-theme.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-theme.yml)                   |
@@ -48,8 +48,10 @@ pnpm install
 
 ### Prepare pre-commit hook
 
+Only if you want those:
+
 ```bash
-pnpm prepare
+pnpm husky:setup
 ```
 
 ### Setup database

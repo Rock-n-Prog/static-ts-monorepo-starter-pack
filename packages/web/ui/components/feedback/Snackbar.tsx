@@ -2,9 +2,10 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Alert, AlertProps } from './Alert';
 
-type SnackbarProps = {
-  readonly duration: number; // ms
-} & AlertProps;
+type SnackbarProps = Readonly<{
+  duration: number; // ms
+}> &
+  AlertProps;
 
 function Snackbar({ duration, ...alertProps }: SnackbarProps) {
   return (
@@ -14,9 +15,9 @@ function Snackbar({ duration, ...alertProps }: SnackbarProps) {
   );
 }
 
-type SnackbarContainerProps = {
-  readonly $duration: number; // ms
-};
+type SnackbarContainerProps = Readonly<{
+  $duration: number; // ms
+}>;
 
 const SnackbarContainer = styled.div<SnackbarContainerProps>(
   ({ $duration }: SnackbarContainerProps) => css`
@@ -33,7 +34,6 @@ const SnackbarContainer = styled.div<SnackbarContainerProps>(
         opacity: 1;
       }
       99% {
-        // TODO: Weird hack to avoid removed snackbars taking space
         width: auto;
         height: auto;
       }

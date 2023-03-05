@@ -9,8 +9,8 @@ const breakpointsToMaxWidth: Record<keyof Theme['breakpoints'], string> = {
   xxl: '82.5rem', // 1320px
 };
 
-const Container = styled.div<{ readonly theme: Theme }>(
-  ({ theme }) => css`
+const Container = styled.div(
+  ({ theme }: Readonly<{ theme: Theme }>) => css`
     display: flex;
     flex-direction: column;
     margin: auto;

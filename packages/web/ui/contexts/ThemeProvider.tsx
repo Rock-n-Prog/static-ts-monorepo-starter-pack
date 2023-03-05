@@ -6,9 +6,9 @@ import { getTheme } from '../styles/theme';
 import GlobalStyle from '../styles/GlobalStyle';
 import { getSystemThemeMode } from '../utils/getSystemThemeMode';
 
-type Props = {
-  readonly initialMode?: ThemeMode;
-};
+type Props = Readonly<{
+  initialMode?: ThemeMode;
+}>;
 
 function ThemeProvider({ children }: React.PropsWithChildren<Props>) {
   const [mode, setMode] = useLocalStorage<ThemeMode>({
@@ -32,10 +32,12 @@ function ThemeProvider({ children }: React.PropsWithChildren<Props>) {
   );
 }
 
-const ThemeContext = React.createContext<{
-  readonly mode: ThemeMode;
-  readonly setMode: (mode: ThemeMode) => void;
-  readonly switchMode: () => void;
-}>({ mode: defaultThemeMode, setMode: () => void 0, switchMode: () => void 0 });
+const ThemeContext = React.createContext<
+  Readonly<{
+    mode: ThemeMode;
+    setMode: (mode: ThemeMode) => void;
+    switchMode: () => void;
+  }>
+>({ mode: defaultThemeMode, setMode: () => void 0, switchMode: () => void 0 });
 
 export { ThemeContext, ThemeProvider };
