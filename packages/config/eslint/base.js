@@ -23,9 +23,8 @@ module.exports = {
     'import/order': 'warn',
     'import/first': 'warn',
     'import/exports-last': 'warn',
-    'functional/no-class': 'error',
     'functional/no-return-void': 'off',
-    'functional/no-expression-statement': 'off',
+    'functional/no-expression-statements': 'off',
     'functional/functional-parameters': 'off',
     'functional/no-mixed-type': 'off',
     'turbo/no-undeclared-env-vars': 'off',
@@ -34,7 +33,6 @@ module.exports = {
     {
       files: ['**/*.js'],
       rules: {
-        'functional/no-expression-statement': 'off',
         'functional/immutable-data': 'off',
         '@typescript-eslint/no-var-requires': 'off',
       },
