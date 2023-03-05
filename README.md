@@ -1,4 +1,4 @@
-# Statuc-TS Monorepo Starter Pack
+# Static-TS Monorepo Starter Pack
 
 Feature-heavy monorepo boilerplate for static web apps, packed with tons of reusable code snippets and defined through a
 strong software architecture. Kind of inspired by [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
@@ -35,7 +35,7 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 - [`packages/web/locales`](packages/web/locales): Locale translations for web app
 - [`packages/web/storage`](packages/web/storage): Storage utilities for web app
 - [`packages/config/eslint/`](packages/config/eslint): Shared eslint config
-- [`packages/confgi/stylelint`](packages/config/stylelint): Shared stylelint config
+- [`packages/config/stylelint`](packages/config/stylelint): Shared stylelint config
 - [`packages/config/tsconfig`](packages/config/tsconfig): Shared tsconfig
 
 ## Setup
