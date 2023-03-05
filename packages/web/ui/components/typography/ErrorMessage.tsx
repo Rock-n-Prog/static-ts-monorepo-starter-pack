@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import type { Theme } from '../../styles/theme';
 import { Typography } from './Typography';
 
+// :empty::before makes input error message take up space, even if not present
 const ErrorMessage = styled.span(
   ({ theme }: Readonly<{ theme: Theme }>) => css`
     ${Typography};
@@ -9,7 +10,6 @@ const ErrorMessage = styled.span(
     font-size: ${theme.fonts.sizes.xs};
     color: ${theme.colors.variants.error.main};
 
-    // Makes input error message take up space, even if not present
     :empty::before {
       content: '';
       display: inline-block;

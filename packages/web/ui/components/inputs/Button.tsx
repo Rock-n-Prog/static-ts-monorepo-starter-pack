@@ -100,6 +100,7 @@ type StyledButtonProps = Readonly<{
   disabled: boolean;
 }>;
 
+// Border makes "outline" buttons same dimension as others
 const StyledButton = styled.button<StyledButtonProps>(
   ({ $variant, theme, disabled }: StyledButtonProps) => css`
     ${ButtonTypography};
@@ -110,8 +111,6 @@ const StyledButton = styled.button<StyledButtonProps>(
     padding: ${theme.spacing.xxs} ${theme.spacing.xs};
     outline: 0;
     background-color: transparent;
-
-    // Makes "outline" buttons same dimension as others
     border: solid 1px transparent;
 
     ${variantToStyles[$variant]({ theme, disabled })}
