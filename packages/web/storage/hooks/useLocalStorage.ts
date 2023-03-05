@@ -11,7 +11,7 @@ function useLocalStorage<T>({ key, initialValue }: GetItemFromLocaleStorageParam
 
   React.useEffect(() => {
     getItemFromLocaleStorage({ key, initialValue })
-      .then(value => setStoredValue(value))
+      .then(setStoredValue)
       .catch((error: Error) => {
         console.error(error);
       });
