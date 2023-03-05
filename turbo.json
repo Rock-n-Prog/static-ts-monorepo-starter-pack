@@ -1,0 +1,46 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "@acme/web#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"],
+      "env": ["NODE_ENV", "VERCEL_URL", "RENDER_INTERNAL_HOSTNAME", "PORT"]
+    },
+    "@acme/mobile#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["node_modules/.cache/metro/**"],
+      "env": ["NODE_ENV", "VERCEL_URL", "PORT"]
+    },
+    "generate": {
+      "outputs": []
+    },
+    "migrate:dev": {
+      "dependsOn": ["^generate"],
+      "env": ["DATABASE_URL"],
+      "outputs": []
+    },
+    "seed": {
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "lint:fix": {
+      "outputs": []
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "env:local": {
+      "outputs": []
+    },
+    "storybook": {
+      "outputs": []
+    }
+  }
+}
