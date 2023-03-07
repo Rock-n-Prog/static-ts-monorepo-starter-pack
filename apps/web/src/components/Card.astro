@@ -1,11 +1,13 @@
 ---
-export interface Props {
+type Props = Readonly<{
 	title: string;
 	body: string;
 	href: string;
-}
+}>;
 
 const { href, title, body } = Astro.props;
+
+export type { Props };
 ---
 
 <li class="link-card">
@@ -19,6 +21,7 @@ const { href, title, body } = Astro.props;
 		</p>
 	</a>
 </li>
+
 <style>
 	.link-card {
 		list-style: none;

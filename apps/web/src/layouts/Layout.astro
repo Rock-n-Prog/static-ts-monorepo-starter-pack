@@ -1,9 +1,11 @@
 ---
-export interface Props {
+type Props = Readonly<{
 	title: string;
-}
+}>;
 
 const { title } = Astro.props;
+
+export type { Props };
 ---
 
 <!DOCTYPE html>
@@ -19,6 +21,7 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
