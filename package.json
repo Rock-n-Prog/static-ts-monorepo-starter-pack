@@ -5,6 +5,7 @@
   "workspaces": [
     "apps/*",
     "packages/*",
+    "packages/clients/*",
     "packages/config/*"
   ],
   "engines": {
@@ -44,6 +45,9 @@
     ],
     "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
+    ],
+    "packages/clients/cms/**/*.{js,ts}": [
+      "eslint --max-warnings 0 --fix packages/clients/cms/**/*.{js,ts}"
     ]
   }
 }

@@ -20,7 +20,7 @@ No need for a project board in a boilerplate.
 
 ### Mock CMS client
 
-- Add mock CMS client package and use in app (await)
+- Use CMS client package in app
 - Use i18n to get correct translations of stuff
 - Add CI + README.md badge
 

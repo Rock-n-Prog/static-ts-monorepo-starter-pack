@@ -20,7 +20,9 @@ ignore:
   - .husky
   - .idea
   - node_modules
+  - apps/web/dist
   - apps/web/node_modules
   - docs/_config.yml
+  - packages/clients/cms/node_modules
   - packages/config/eslint/node_modules
   - packages/config/stylelint/node_modules
