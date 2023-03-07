@@ -10,9 +10,10 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
 ## Status
 
-| Name    | Type    | Status                                                                                                                                                                                                             |
-| ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| General | General | [![General](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml) |
+| Name    | Type    | Status                                                                                                                                                                                                                                 |
+| ------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| General | General | [![General](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml)                     |
+| Web     | App     | [![Build Web App](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml) |
 
 ## Apps
 
