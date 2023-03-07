@@ -14,14 +14,6 @@ dist/
 # testing
 coverage
 
-# next.js
-.next/
-out/
-build/
-
-# expo
-.expo/
-
 # misc
 .DS_Store
 *.pem
@@ -34,9 +26,6 @@ yarn-error.log*
 
 # env vars
 .env
-
-# Storybook
-storybook-static
 
 # JetBrains
 .idea

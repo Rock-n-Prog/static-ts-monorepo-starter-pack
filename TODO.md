@@ -6,19 +6,22 @@ No need for a project board in a boilerplate.
 
 ### Astro web app
 
-- Rework Astro README.md
 - Setup eslint with shared config
+  - Also add CI step
 - Setup tsconfig with shared config
+  - Also add CI step
 - Setup SCSS
 - Setup stylelint with shared config (switch styled-components stuff for SCSS)
-- Add CI + README.md badge
+  - If necessary only
+  - Also add CI trigger
 - Setup i18n
 - Add some images
-- Add some pages + routing
+- Rework app, add some pages + routing
 
 ### Mock CMS client
 
-- Add mock CMS client package
+- Add mock CMS client package and use in app (await)
+- Use i18n to get correct translations of stuff
 - Add CI + README.md badge
 
 ## Cleanup

@@ -5,20 +5,8 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "@acme/api#build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**"]
-    },
-    "generate": {
-      "outputs": []
-    },
-    "migrate:dev": {
-      "dependsOn": ["^generate"],
-      "env": ["DATABASE_URL"],
-      "outputs": []
-    },
-    "seed": {
-      "outputs": []
+    "@acme/web#build": {
+      "dependsOn": ["^build"]
     },
     "lint": {
       "outputs": []
@@ -31,9 +19,6 @@
       "cache": false
     },
     "env:local": {
-      "outputs": []
-    },
-    "storybook": {
       "outputs": []
     }
   }
