@@ -6,8 +6,6 @@ No need for a project board in a boilerplate.
 
 ### Astro web app
 
-- Setup eslint with shared config
-  - Also add CI step
 - Setup tsconfig with shared config
   - Also add CI step
 - Setup SCSS
@@ -24,8 +22,12 @@ No need for a project board in a boilerplate.
 - Use i18n to get correct translations of stuff
 - Add CI + README.md badge
 
-## Cleanup
+## Docs
 
 - Rework /docs directory (new Astro feature, review of existing stuff)
+- Document considerations for deployment (https://docs.astro.build/en/guides/integrations-guide/vercel)
+
+## Cleanup
+
 - Review if we need .npmrc the way it is
 - Remove "BIG WIP" text in README.md, review project description

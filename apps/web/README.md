@@ -29,3 +29,12 @@ pnpm preview
 ```bash
 pnpm build
 ```
+
+### Lint
+
+```bash
+pnpm lint
+
+# To fix lint
+pnpm lint:fix
+```

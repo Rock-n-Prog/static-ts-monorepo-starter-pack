@@ -3,11 +3,17 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
     "build": "astro build",
+    "dev": "astro dev",
+    "lint": "eslint --max-warnings 0 --ext js,ts,astro .",
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts,astro .",
     "preview": "astro preview"
   },
   "dependencies": {
     "astro": "^2.0.18"
+  },
+  "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "eslint": "^8.35.0"
   }
 }
