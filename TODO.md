@@ -4,17 +4,25 @@ No need for a project board in a boilerplate.
 
 ## Features
 
-- Add Astro web app (named web)
-- Change "users" mock data for "news" (more proper for static sites)
+### Astro web app
+
+- Rework Astro README.md
+- Setup eslint with shared config
+- Setup tsconfig with shared config
+- Setup SCSS
+- Setup stylelint with shared config (switch styled-components stuff for SCSS)
+- Add CI + README.md badge
+- Setup i18n
+- Add some images
+- Add some pages + routing
+
+### Mock CMS client
+
+- Add mock CMS client package
+- Add CI + README.md badge
 
 ## Cleanup
 
-- Review usage / need for "web" packages
-- Review usage of deps / packages related to Astro usage
-  - SCSS instead of Styled-components, probably can change stylelint config and other stuff
 - Rework /docs directory (new Astro feature, review of existing stuff)
 - Review if we need .npmrc the way it is
-
-## Bugs
-
-- Fix "web" package build, re-add CI step (Module not found: Can't resolve '@acme/db')
+- Remove "BIG WIP" text in README.md, review project description

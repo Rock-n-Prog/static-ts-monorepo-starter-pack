@@ -1,4 +1,0 @@
-{
-  "extends": "@acme/tsconfig/node.json",
-  "include": ["."]
-}

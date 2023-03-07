@@ -1,9 +1,0 @@
-# dependencies
-node_modules
-
-# turbo
-.turbo
-
-# next
-.next
-build
