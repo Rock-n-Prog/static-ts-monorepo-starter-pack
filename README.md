@@ -10,10 +10,11 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
 ## Status
 
-| Name    | Type    | Status                                                                                                                                                                                                                                 |
-| ------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| General | General | [![General](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml)                     |
-| Web     | App     | [![Build Web App](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml) |
+| Name       | Type    | Status                                                                                                                                                                                                                                                            |
+| ---------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| General    | General | [![General](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/general.yml)                                                |
+| Web        | App     | [![Build Web App](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-apps-web.yml)                            |
+| CMS Client | Package | [![Build CMS Client](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-clients-cms.yml/badge.svg)](https://github.com/rock-n-prog/static-ts-monorepo-starter-pack/actions/workflows/build-packages-clients-cms.yml) |
 
 ## Apps
 
@@ -21,6 +22,7 @@ Made with love by [Fabien Roy](https://github.com/ExiledNarwal28).
 
 ## Packages
 
+- [`packages/clients/cms`](packages/clients/cms): CMS client library
 - [`packages/config/eslint`](packages/config/eslint): Shared eslint config
 - [`packages/config/stylelint`](packages/config/stylelint): Shared stylelint config
 - [`packages/config/tsconfig`](packages/config/tsconfig): Shared tsconfig
