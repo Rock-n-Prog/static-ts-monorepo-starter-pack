@@ -44,6 +44,9 @@
     ],
     "**/*.{js,jsx,ts,tsx,json,css,md,yml}": [
       "pnpm format:fix"
+    ],
+    "apps/web/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings 0 --fix apps/web/**/*.{js,ts,astro}"
     ]
   }
 }

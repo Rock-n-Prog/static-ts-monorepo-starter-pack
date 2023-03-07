@@ -6,13 +6,13 @@ No need for a project board in a boilerplate.
 
 ### Astro web app
 
-- Setup tsconfig with shared config
-  - Also add CI step
 - Setup SCSS
 - Setup stylelint with shared config (switch styled-components stuff for SCSS)
   - If necessary only
   - Also add CI trigger
 - Setup i18n
+  - Package it? (web/locales)
+  - Add i18n keys linting
 - Add some images
 - Rework app, add some pages + routing
 
