@@ -1,0 +1,69 @@
+---
+type Props = Readonly<{
+	title: string;
+	body: string;
+	href?: string;
+	shortened?: boolean;
+}>;
+
+const { title, body, href, shortened = false } = Astro.props;
+---
+
+<a href={href}>
+  <div class="card">
+    <h2>
+      {title}
+    </h2>
+    <p class={shortened ? 'shortened' : ''}>
+      {body}
+    </p>
+  </div>
+</a>
+
+<style lang="scss">
+  @import '../../styles/colors.scss';
+  @import '../../styles/fonts.scss';
+  @import '../../styles/spacings.scss';
+
+  a {
+    text-decoration: none;
+  }
+	.card {
+		display: flex;
+		flex-direction: column;
+		padding: $spacing-1 $spacing-4;
+		border: $spacing-1 solid transparent;
+		border-radius: $spacing-2;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+		transition: border-color 100ms ease-in-out;
+
+    h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: $text-high;
+      transition: color 100ms ease-in-out;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      color: $text-medium;
+      line-height: $line-height-medium;
+
+      &.shortened {
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: calc($line-height-medium * 3);
+      }
+    }
+
+    &:is(:hover, :focus-within) {
+      border-color: $primary-light;
+
+      h2 {
+        color: $primary-main;
+      }
+    }
+	}
+</style>

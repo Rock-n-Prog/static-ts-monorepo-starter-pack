@@ -10,18 +10,15 @@ No need for a project board in a boilerplate.
   - Also add CI step
 - Setup tsconfig with shared config
   - Also add CI step
-- Setup SCSS
 - Setup stylelint with shared config (switch styled-components stuff for SCSS)
   - If necessary only
   - Also add CI trigger
 - Setup i18n
 - Add some images
-- Rework app, add some pages + routing
 
 ### Mock CMS client
 
 - Use i18n to get correct translations of posts
-- Add CI + README.md badge
 
 ## Cleanup
 

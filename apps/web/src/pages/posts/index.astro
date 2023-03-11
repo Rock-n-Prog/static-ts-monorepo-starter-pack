@@ -1,7 +1,8 @@
 ---
 import { createClient } from '@acme/cms-client';
 import Layout from '../../layouts/Layout.astro';
-import Card from '../../components/Card.astro';
+import Card from '../../components/layouts/Card.astro';
+import CardList from '../../components/layouts/CardList.astro';
 
 const client = createClient();
 const posts = await client.posts.getAll();
@@ -10,12 +11,18 @@ const posts = await client.posts.getAll();
 <Layout title="Posts">
 	<main>
 		<h1>Latest posts</h1>
-		{posts.map((post) => (
-      <Card
-        title={post.title}
-        body={post.content}
-        href={`/posts/${post.slug}`}
-      />
-    ))}
+		<CardList>
+      {posts.map((post) => (
+        <li>
+          <Card
+            title={post.title}
+            body={post.content}
+            href={`/posts/${post.slug}`}
+            shortened
+          />
+        </li>
+      ))}
+		</CardList>
+    <a href="/">Back to home</a>
 	</main>
 </Layout>
