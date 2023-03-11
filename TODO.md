@@ -23,6 +23,10 @@ No need for a project board in a boilerplate.
 - Use i18n to get correct translations of posts
 - Add CI + README.md badge
 
+## Bugs
+
+- Re-add "build" step of CMS Client, has problems finding tsconfig
+
 ## Cleanup
 
 - Rework /docs directory (new Astro feature, review of existing stuff)
