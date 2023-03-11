@@ -1,19 +1,22 @@
 ---
-import * as cmsClient from '@acme/cms-client';
+import { createClient } from '@acme/cms-client';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
-console.log({ cmsClient });
-//const client = createClient();
-//console.log({ client });
-// const posts = await client.posts.getAll();
-
-// TODO: Link to posts (page for each)
+const client = createClient();
+const posts = await client.posts.getAll();
 ---
 
 <Layout title="Posts">
 	<main>
 		<h1>Latest posts</h1>
+		{posts.map((post) => (
+      <Card
+        title={post.title}
+        body={post.content}
+        href="#"
+      />
+    ))}
 	</main>
 </Layout>
 

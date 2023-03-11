@@ -2,8 +2,8 @@
   "name": "@acme/cms-client",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.ts",
+  "main": "index.ts",
+  "types": "index.ts",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w && nodemon dist/index.js",
