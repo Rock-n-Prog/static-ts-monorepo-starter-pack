@@ -1,12 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/layouts/Card.astro';
+import { changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/layouts/Card.astro";
+
+changeLanguage("en");
 ---
 
 <Layout title="About">
-	<main>
-		<h1>About ACME</h1>
-		<p>Template provided by Rock n' Prog, Fabien Roy's organization for building stuff</p>
-    <a href="/">Back to home</a>
-	</main>
+  <h1>About ACME</h1>
+  <p>Template provided by Rock n' Prog, Fabien Roy's organization for building stuff</p>
+  <a href="/">Back to home</a>
 </Layout>

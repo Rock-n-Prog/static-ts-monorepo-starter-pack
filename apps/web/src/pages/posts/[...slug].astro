@@ -1,26 +1,25 @@
 ---
-import { createClient } from '@acme/cms-client';
-import Layout from '../../layouts/Layout.astro';
+import { changeLanguage } from "i18next";
+import { createClient } from "@acme/cms-client";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("en");
 
 export async function getStaticPaths() {
-  const client = createClient();
-  const posts = await client.posts.getAll();
-
-  return posts.map(({ slug, title, content }) => {
-    return {
-      params: { slug },
-      props: { title, content },
-    };
-  });
+    const client = createClient();
+    const posts = await client.posts.getAll();
+    return posts.map(({ slug, title, content }) => {
+        return {
+            params: { slug },
+            props: { title, content },
+        };
+    });
 }
-
 const { title, content } = Astro.props;
 ---
 
 <Layout title={title}>
-	<main>
-		<h1>{title}</h1>
-		<p>{content}</p>
-    <a href="/posts">Back to all posts</a>
-	</main>
+  <h1>{title}</h1>
+  <p>{content}</p>
+  <a href="/posts">Back to all posts</a>
 </Layout>

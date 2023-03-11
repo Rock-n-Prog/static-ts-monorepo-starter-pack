@@ -11,12 +11,7 @@ No need for a project board in a boilerplate.
 - Setup stylelint with shared config (switch styled-components stuff for SCSS)
   - If necessary only
   - Also add CI trigger
-- Setup i18n
 - Add some images
-
-### Mock CMS client
-
-- Use i18n to get correct translations of posts
 
 ## Cleanup
 
