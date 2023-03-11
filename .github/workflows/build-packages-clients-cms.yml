@@ -45,3 +45,6 @@ jobs:
 
       - name: Lint
         run: pnpm --filter @acme/cms-client lint
+
+      - name: Build
+        run: pnpm --filter @acme/cms-client build
