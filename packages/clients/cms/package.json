@@ -2,14 +2,13 @@
   "name": "@acme/cms-client",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.ts",
+  "main": "index.ts",
+  "types": "index.ts",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w && nodemon dist/index.js",
     "lint": "eslint --max-warnings 0 --ext js,ts .",
-    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts .",
-    "start": "node dist/index.js"
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts ."
   },
   "dependencies": {
     "zod": "^3.19.1"

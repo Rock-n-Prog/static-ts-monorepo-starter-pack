@@ -20,8 +20,7 @@ No need for a project board in a boilerplate.
 
 ### Mock CMS client
 
-- Use CMS client package in app
-- Use i18n to get correct translations of stuff
+- Use i18n to get correct translations of posts
 - Add CI + README.md badge
 
 ## Cleanup

@@ -1,6 +1,7 @@
 import { z } from 'zod';
 
 const postSchema = z.object({
+  slug: z.string(),
   title: z.string(),
   content: z.string(),
 });

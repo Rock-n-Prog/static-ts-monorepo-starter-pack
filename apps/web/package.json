@@ -8,6 +8,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@acme/cms-client": "workspace:*",
     "astro": "^2.0.18"
   }
 }

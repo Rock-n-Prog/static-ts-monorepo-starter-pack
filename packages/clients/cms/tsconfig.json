@@ -2,8 +2,8 @@
   "extends": "@acme/tsconfig/node.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "baseUrl": ".."
+    "baseUrl": "."
   },
-  "include": [".."],
+  "include": ["index.ts"],
   "exclude": ["dist", "build", "node_modules"]
 }

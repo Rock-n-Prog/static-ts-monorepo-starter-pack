@@ -1,5 +1,6 @@
 const stubPosts = [
   {
+    slug: '1',
     title: 'My first post',
     content: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. Felis bibendum ut tristique et egestas quis ipsum. Ut pharetra sit amet aliquam id diam maecenas ultricies. Tempus imperdiet nulla malesuada pellentesque elit eget. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Odio aenean sed adipiscing diam. Aenean et tortor at risus viverra adipiscing at. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo. At quis risus sed vulputate odio ut enim blandit volutpat. Nam at lectus urna duis convallis convallis tellus. Nisl condimentum id venenatis a. Integer malesuada nunc vel risus commodo viverra.
@@ -10,6 +11,7 @@ Tortor at auctor urna nunc id cursus metus aliquam eleifend. Fermentum leo vel o
         `,
   },
   {
+    slug: '2',
     title: 'My second post',
     content: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Viverra suspendisse potenti nullam ac tortor vitae purus. Suscipit tellus mauris a diam maecenas sed enim ut sem. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Faucibus vitae aliquet nec ullamcorper. Arcu felis bibendum ut tristique et. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Arcu dictum varius duis at. Parturient montes nascetur ridiculus mus. Non tellus orci ac auctor augue mauris augue neque gravida. Suscipit tellus mauris a diam maecenas. Tellus at urna condimentum mattis. Pretium aenean pharetra magna ac placerat vestibulum lectus. Tortor pretium viverra suspendisse potenti nullam ac tortor. Tellus pellentesque eu tincidunt tortor aliquam nulla. Malesuada bibendum arcu vitae elementum. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor.
@@ -20,6 +22,7 @@ Cras pulvinar mattis nunc sed blandit libero volutpat sed. Facilisis mauris sit 
 `,
   },
   {
+    slug: '3',
     title: 'My third post',
     content: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Amet est placerat in egestas erat imperdiet sed euismod. At tellus at urna condimentum mattis pellentesque id nibh. Sem integer vitae justo eget. A diam sollicitudin tempor id eu nisl nunc mi. Elit ullamcorper dignissim cras tincidunt lobortis. Pretium aenean pharetra magna ac placerat vestibulum. Convallis convallis tellus id interdum velit. Viverra adipiscing at in tellus integer. A diam maecenas sed enim.

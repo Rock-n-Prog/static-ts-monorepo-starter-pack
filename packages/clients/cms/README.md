@@ -1,10 +1,6 @@
-# ACME tRPC routers and configs
+# ACME CMS Client
 
-tRPC routes and context definitions for ACME apps.
-
-This package uses:
-
-- [`packages/db`](../db): Prisma client and models definitions
+Node.js CMS client for ACME apps.
 
 ## Setup
 
@@ -21,10 +17,6 @@ pnpm build
 
 # To --watch
 pnpm build:watch
-```
-
-```bash
-pnpm -F @acme/db generate
 ```
 
 ### Lint

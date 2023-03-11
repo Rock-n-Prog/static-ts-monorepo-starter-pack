@@ -40,8 +40,8 @@ jobs:
         with:
           version: 7.9.5
 
-      - name: Install dependencies
-        run: pnpm --filter @acme/web install
+      - name: Install all dependencies
+        run: pnpm install
 
       - name: Build
         run: pnpm --filter @acme/web build
