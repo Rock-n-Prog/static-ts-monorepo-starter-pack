@@ -7,7 +7,7 @@
     "base.json",
     "node.json"
   ],
-    "dependencies": {
-      "astro": "^2.1.2"
-    }
+  "dependencies": {
+    "astro": "^2.1.2"
+  }
 }
