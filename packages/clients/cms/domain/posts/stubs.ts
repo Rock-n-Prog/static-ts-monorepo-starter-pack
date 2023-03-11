@@ -21,8 +21,8 @@ In quis nisl et enim cursus fringilla vel semper dolor. Etiam a massa libero. Et
 
 Praesent tristique tincidunt elit quis elementum. Quisque condimentum mauris quis tempus consectetur. Ut accumsan consequat nisi, eget bibendum est dapibus in. Suspendisse finibus volutpat nisl. Suspendisse lacinia justo ac dui varius, non gravida justo rhoncus. Etiam arcu elit, suscipit sit amet nisl id, sagittis venenatis lacus. Etiam eget suscipit lectus, ut bibendum dui. Quisque orci nisl, luctus at pharetra quis, pretium auctor nulla. Nullam eget nisi elit. Ut interdum augue tellus, quis feugiat sem pellentesque eu. Cras congue quam nulla, id posuere dui malesuada sed. Nullam vitae nisl diam. Ut sagittis mauris id nisl dapibus convallis. Curabitur sed magna et sapien feugiat vulputate. Praesent vestibulum lacus purus, et cursus erat efficitur sed.
         `,
-      }
-    }
+      },
+    },
   },
   {
     slug: '2',

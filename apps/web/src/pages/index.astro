@@ -8,20 +8,20 @@ changeLanguage("en");
 ---
 
 <Layout>
-  <h1>{t('common:welcomeToAcmeApp')}</h1>
+  <h1>{t('home:welcomeToAcmeApp')}</h1>
   <CardList>
     <li>
       <Card
         href="/posts"
-        title="Posts"
-        body="View list of posts"
+        title={t('navigation.posts')}
+        body={t('home:viewListOfPosts')}
       />
     </li>
     <li>
       <Card
         href="/about"
-        title="About"
-        body="About us"
+        title={t('navigation.about')}
+        body={t('home:aboutUs')}
       />
     </li>
   </CardList>

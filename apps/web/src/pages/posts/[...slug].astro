@@ -1,5 +1,5 @@
 ---
-import i18n, { changeLanguage } from "i18next";
+import i18n, { t, changeLanguage } from "i18next";
 import { createClient } from "@acme/cms-client";
 import Layout from "../../layouts/Layout.astro";
 
@@ -21,5 +21,5 @@ const { title, content } = Astro.props;
 <Layout title={title}>
   <h1>{title}</h1>
   <p>{content}</p>
-  <a href="/posts">Back to all posts</a>
+  <a href="/posts">{t('actions.backToName', { name: t('navigation.posts') })}</a>
 </Layout>

@@ -1,4 +1,11 @@
 {
   "acme": "ACME",
-  "welcomeToAcmeApp": "Bienvenue à l'app ACME"
+  "actions": {
+    "backToName": "Revenie à {{name}}"
+  },
+  "navigation": {
+    "home": "Acceuil",
+    "about": "À propos",
+    "posts": "Articles"
+  }
 }

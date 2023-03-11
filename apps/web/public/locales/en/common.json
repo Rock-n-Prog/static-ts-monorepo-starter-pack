@@ -1,4 +1,11 @@
 {
   "acme": "ACME",
-  "welcomeToAcmeApp": "Welcome to ACME app"
+  "actions": {
+    "backToName": "Back to {{name}}"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "posts": "Posts"
+  }
 }

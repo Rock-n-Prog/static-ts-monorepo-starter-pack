@@ -1,9 +1,9 @@
 const Locales = {
-    En: 'en',
-    Fr: 'fr',
+  En: 'en',
+  Fr: 'fr',
 } as const;
 
-type Locale = typeof Locales[keyof typeof Locales];
+type Locale = (typeof Locales)[keyof typeof Locales];
 
 export type { Locale };
 export { Locales };

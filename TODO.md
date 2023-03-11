@@ -13,6 +13,13 @@ No need for a project board in a boilerplate.
   - Also add CI trigger
 - Add some images
 
+## Improvements
+
+- i18n
+  - Watch changes when running dev server, generate localized pages
+  - Only run dev mode when running locally
+  - Generate localized paths (cannot use with path params ATM)
+
 ## Cleanup
 
 - Rework /docs directory (new Astro feature, review of existing stuff)

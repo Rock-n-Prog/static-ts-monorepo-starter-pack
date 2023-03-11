@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import {Locales} from "../types/Locales";
+import { Locales } from '../types/Locales';
 
 const postLocalizedSchema = z.object({
   title: z.string(),
