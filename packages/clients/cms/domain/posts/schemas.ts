@@ -1,12 +1,14 @@
 import { z } from 'zod';
+import { Locales } from '../types/Locales';
 
-const postSchema = z.object({
-  slug: z.string(),
+const postLocalizedSchema = z.object({
   title: z.string(),
   content: z.string(),
 });
 
-type Post = z.infer<typeof postSchema>;
+const postSchema = z.object({
+  slug: z.string(),
+  i18n: z.record(z.nativeEnum(Locales), postLocalizedSchema),
+});
 
-export type { Post };
 export { postSchema };

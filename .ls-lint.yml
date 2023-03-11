@@ -2,8 +2,9 @@ ls:
   # Regex for dotfiles
   .dir: kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+)
   # Regex for dotfiles
-  .js: camelCase | kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+)
+  .js: camelCase | PascalCase | kebab-case | regex:^\/?(?:\w+\/)*(\.[\w-]+)
   .config.js: kebab-case
+  .config.ts: kebab-case
   # Regex for thingsLikeTHISYouKnow (ex: URL, SSG, ...)
   .ts: camelCase | PascalCase | regex:[a-zA-Z]+([A-Za-z]+)+$
   .d.ts: kebab-case

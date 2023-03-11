@@ -1,12 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/layouts/Card.astro';
+import { t, changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/layouts/Card.astro";
+
+changeLanguage("en");
 ---
 
-<Layout title="About">
-	<main>
-		<h1>About ACME</h1>
-		<p>Template provided by Rock n' Prog, Fabien Roy's organization for building stuff</p>
-    <a href="/">Back to home</a>
-	</main>
+<Layout title={t('about:about')}>
+  <h1>{t('about:aboutAcme')}</h1>
+  <p>{t('about:templateProvidedBy')}</p>
+  <a href="/">{t('actions.backToName', { name: t('navigation.home') })}</a>
 </Layout>

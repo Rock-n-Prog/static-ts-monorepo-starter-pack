@@ -1,4 +1,7 @@
 ---
+import i18next, { t } from 'i18next';
+import { HeadHrefLangs, LanguageSelector } from 'astro-i18next/components';
+
 type Props = Readonly<{
 	title: string;
 }>;
@@ -7,16 +10,20 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title ? `${title} | ACME` : 'ACME'}</title>
+		<title>{title ? `${title} | ${t('acme')}` : t('acme')}</title>
+		<HeadHrefLangs />
 	</head>
 	<body>
-		<slot />
+    <main>
+      <slot />
+      <LanguageSelector showFlag />
+    </main>
 	</body>
 </html>
 
