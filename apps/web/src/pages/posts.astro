@@ -1,0 +1,31 @@
+---
+import * as cmsClient from '@acme/cms-client';
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+console.log({ cmsClient });
+//const client = createClient();
+//console.log({ client });
+// const posts = await client.posts.getAll();
+
+// TODO: Link to posts (page for each)
+---
+
+<Layout title="Posts">
+	<main>
+		<h1>Latest posts</h1>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+</style>

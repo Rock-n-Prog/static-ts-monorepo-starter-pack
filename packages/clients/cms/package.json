@@ -8,8 +8,7 @@
     "build": "tsc",
     "build:watch": "tsc -w && nodemon dist/index.js",
     "lint": "eslint --max-warnings 0 --ext js,ts .",
-    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts .",
-    "start": "node dist/index.js"
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts ."
   },
   "dependencies": {
     "zod": "^3.19.1"

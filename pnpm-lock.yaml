@@ -22,8 +22,10 @@ importers:
 
   apps/web:
     specifiers:
+      '@acme/cms-client': workspace:*
       astro: ^2.0.18
     dependencies:
+      '@acme/cms-client': link:../../packages/clients/cms
       astro: 2.0.18
 
   packages/clients/cms:

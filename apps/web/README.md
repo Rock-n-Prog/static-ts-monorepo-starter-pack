@@ -4,6 +4,10 @@ Astro app for ACME.
 
 Used as a hybrid framework (both backend and frontend) to generate static web pages.
 
+This app uses:
+
+- [CMS Client](../../packages/clients/cms)
+
 ## Setup
 
 ```bash
