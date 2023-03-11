@@ -1,0 +1,18 @@
+<ul class="card-list" role="list">
+  <slot />
+</ul>
+
+<style lang="scss">
+  @import '../../styles/spacings.scss';
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+    padding: 0;
+
+    :global(li) {
+      list-style: none;
+    }
+  }
+</style>

@@ -1,7 +1,6 @@
 ---
 import { createClient } from '@acme/cms-client';
 import Layout from '../../layouts/Layout.astro';
-import Card from '../../components/Card.astro';
 
 export async function getStaticPaths() {
   const client = createClient();
@@ -21,10 +20,7 @@ const { title, content } = Astro.props;
 <Layout title={title}>
 	<main>
 		<h1>{title}</h1>
-    <Card
-      title={title}
-      body={content}
-    />
+		<p>{content}</p>
     <a href="/posts">Back to all posts</a>
 	</main>
 </Layout>

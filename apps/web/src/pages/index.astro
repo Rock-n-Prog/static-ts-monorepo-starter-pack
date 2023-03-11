@@ -1,26 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Card from '../components/layouts/Card.astro';
+import CardList from '../components/layouts/CardList.astro';
 ---
 
 <Layout>
 	<main>
 		<h1>Welcome to ACME app</h1>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/posts"
-				title="Posts"
-				body="View list of posts"
-			/>
-		</ul>
+		<CardList>
+		  <li>
+        <Card
+          href="/posts"
+          title="Posts"
+          body="View list of posts"
+        />
+		  </li>
+		  <li>
+        <Card
+          href="/about"
+          title="About"
+          body="About us"
+        />
+		  </li>
+		</CardList>
 	</main>
 </Layout>
-
-<style>
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>

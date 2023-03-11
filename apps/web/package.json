@@ -10,5 +10,8 @@
   "dependencies": {
     "@acme/cms-client": "workspace:*",
     "astro": "^2.0.18"
+  },
+  "devDependencies": {
+    "sass": "^1.59.2"
   }
 }
