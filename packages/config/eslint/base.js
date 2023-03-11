@@ -46,7 +46,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.js'],
+      files: ['**/*.js', '**/*.mjs'],
       rules: {
         'functional/immutable-data': 'off',
         '@typescript-eslint/no-var-requires': 'off',

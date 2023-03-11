@@ -3,8 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
     "build": "astro build",
+    "dev": "astro dev",
+    "lint": "eslint --max-warnings 0 --ext js,ts,mjs,astro .",
+    "lint:fix": "eslint --max-warnings 0 --fix --ext js,ts,mjs,astro .",
     "preview": "astro preview"
   },
   "dependencies": {
@@ -13,6 +15,9 @@
   },
   "devDependencies": {
     "@acme/tsconfig": "workspace:*",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.36.0",
+    "eslint-plugin-astro": "^0.24.0",
     "sass": "^1.59.2"
   }
 }
