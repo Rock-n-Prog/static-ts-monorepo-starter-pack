@@ -43,5 +43,8 @@ jobs:
       - name: Install all dependencies
         run: pnpm install
 
+      - name: Lint
+        run: pnpm --filter @acme/web lint
+
       - name: Build
         run: pnpm --filter @acme/web build
