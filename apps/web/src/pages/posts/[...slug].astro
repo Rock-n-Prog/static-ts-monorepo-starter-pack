@@ -1,0 +1,30 @@
+---
+import { createClient } from '@acme/cms-client';
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+
+export async function getStaticPaths() {
+  const client = createClient();
+  const posts = await client.posts.getAll();
+
+  return posts.map(({ slug, title, content }) => {
+    return {
+      params: { slug },
+      props: { title, content },
+    };
+  });
+}
+
+const { title, content } = Astro.props;
+---
+
+<Layout title={title}>
+	<main>
+		<h1>{title}</h1>
+    <Card
+      title={title}
+      body={content}
+    />
+    <a href="/posts">Back to all posts</a>
+	</main>
+</Layout>
