@@ -9,9 +9,10 @@
   },
   "dependencies": {
     "@acme/cms-client": "workspace:*",
-    "astro": "^2.0.18"
+    "astro": "^2.1.2"
   },
   "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
     "sass": "^1.59.2"
   }
 }

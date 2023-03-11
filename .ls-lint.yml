@@ -26,3 +26,4 @@ ignore:
   - packages/clients/cms/node_modules
   - packages/config/eslint/node_modules
   - packages/config/stylelint/node_modules
+  - packages/config/tsconfig/node_modules

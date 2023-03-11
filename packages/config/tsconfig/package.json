@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "files": [
+    "astro.json",
     "base.json",
     "node.json"
-  ]
+  ],
+  "dependencies": {
+    "astro": "^2.1.2"
+  }
 }

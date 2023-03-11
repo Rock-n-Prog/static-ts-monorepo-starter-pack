@@ -8,8 +8,6 @@ No need for a project board in a boilerplate.
 
 - Setup eslint with shared config
   - Also add CI step
-- Setup tsconfig with shared config
-  - Also add CI step
 - Setup stylelint with shared config (switch styled-components stuff for SCSS)
   - If necessary only
   - Also add CI trigger
