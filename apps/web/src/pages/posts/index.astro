@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import i18n, { changeLanguage } from "i18next";
 import { createClient } from "@acme/cms-client";
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/layouts/Card.astro";
@@ -8,7 +8,7 @@ import CardList from "../../components/layouts/CardList.astro";
 changeLanguage("en");
 
 const client = createClient();
-const posts = await client.posts.getAll();
+const posts = await client.posts.getAll(i18n.language);
 ---
 
 <Layout title="Posts">
